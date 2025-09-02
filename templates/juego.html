@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pregunta-box">
+        {{ pregunta }}
+    </div>
+    <img src="{{ url_for('static', filename=imagen) }}">
+    <form method="post">
+        <input type="text" name="respuesta" placeholder="Escribe tu respuesta">
+        <br>
+        <button type="submit">Responder</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Títulos */
+h1, h2 {
+    animation: fadeIn 1.5s ease;
+}
+
+.titulo-trivia {
+    font-family: 'Fredoka One', cursive;  /* fuente divertida */
+    font-size: 70px;                       /* tamaño grande */
+    color: #FFFFFF;                           /* color blanco */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);  /* sombra para resaltar */
+    animation: fadeIn 1.5s ease;           /* animación de entrada */
+}
+
+
+/* 📸 Estilos de imágenes con tamaño moderado */
+img {
+    width: 65%;          /* ocupa la mitad de la pantalla */
+    max-width: 800px;    /* nunca pasa de 500px */
+    min-width: 700px;    /* nunca será demasiado chica */
+    height: auto;        /* mantiene la proporción */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin: 20px auto;
+    display: block;      /* asegura que quede centrada */
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+/* 📱 Ajuste automático en pantallas pequeñas */
+@media (max-width: 768px) {
+    img {
+        width: 80%;      /* en celulares ocupa menos espacio */
+        max-width: 350px;
+    }
+}
+
+/* Caja semitransparente para preguntas (como LabelConRecuadro en Kivy) */
+.pregunta-box {
+    background: rgba(0, 0, 0, 0.6);  /* Fondo negro semitransparente */
+    color: white;                    /* Texto en blanco */
+    padding: 10px 15px;                   /* Espaciado interno 15*/
+    margin: 15px auto;               /* Espacio hacia afuera y centrado */
+    border-radius: 12px;             /* Bordes redondeados */
+    width: 90%;                      /* Caja ocupa el 70% de la pantalla */
+    max-width: 800px;                /* Nunca será más grande de 600px */
+    font-size: 40px;                 /* Tamaño del texto */
+    line-height: 1.4;                /* Espaciado entre líneas */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);  /* Sombra para resaltar */
+}
+
+
+/* Input de texto */
+form input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Botones */
+form button, a.boton {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.codigo-final {
+    font-size: 36px;          /* tamaño grande */
+    font-weight: bold;         /* negrita */
+    color: #fff;               /* opcional, blanco para resaltar */
+    background: rgba(0,0,0,0.6); /* opcional: fondo semitransparente */
+    padding: 10px 20px;       /* espacio dentro del recuadro */
+    border-radius: 10px;      /* bordes redondeados */
+    display: inline-block;    /* que se vea como tarjeta */
+    margin-top: 20px;
+}
+
+
+form button:hover, a.boton:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

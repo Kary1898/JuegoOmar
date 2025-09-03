@@ -48,9 +48,10 @@ def juego():
 def final():
     respuestas = session.get("respuestas", [])
     if respuestas == codigo_correcto:
-        return render_template("final.html", exito=True, codigo="3923")
+        return render_template("final.html", exito=True, codigo="309")
     else:
         return render_template("final.html", exito=False)
 
 if __name__ == "__main__":
     app.run(debug=True)
+

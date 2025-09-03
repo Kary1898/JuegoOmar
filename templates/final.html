@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    {% if exito %}
+        <h2>🎉 ¡Correcto bb! Lofiu 🎉</h2>
+        <p class="codigo-final">Tu código es: <b>{{ codigo }}</b></p>
+        <img src="{{ url_for('static', filename='imagenes/feliz.jpg') }}">
+    {% else %}
+        <h2> Incorrecto 💔. ¿Acaso me odias? </h2>
+        <h2>Intenta de nuevo.</h2>
+        <img src="{{ url_for('static', filename='imagenes/enojado.png') }}">
+    {% endif %}
+    <br>
+    <a href="{{ url_for('inicio') }}" class="boton">Volver a intentar</a>
+</body>
+</html>

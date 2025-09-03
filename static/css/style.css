@@ -56,7 +56,7 @@ img:hover {
     border-radius: 12px;             /* Bordes redondeados */
     width: 90%;                      /* Caja ocupa el 70% de la pantalla */
     max-width: 800px;                /* Nunca será más grande de 600px */
-    font-size: 40px;                 /* Tamaño del texto */
+    font-size: 35px;                 /* Tamaño del texto */
     line-height: 1.4;                /* Espaciado entre líneas */
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);  /* Sombra para resaltar */
 }
@@ -72,7 +72,7 @@ form input[type="text"] {
     margin-top: 30px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /* Botones */
@@ -84,14 +84,14 @@ form button, a.boton {
     border-radius: 25px;
     margin: 15px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
     transition: transform 0.3s, opacity 0.3s;
     text-decoration: none;
     display: inline-block;
 }
 
 .codigo-final {
-    font-size: 36px;          /* tamaño grande */
+    font-size: 30px;          /* tamaño grande */
     font-weight: bold;         /* negrita */
     color: #fff;               /* opcional, blanco para resaltar */
     background: rgba(0,0,0,0.6); /* opcional: fondo semitransparente */
